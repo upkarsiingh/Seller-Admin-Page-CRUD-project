@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sellers Admin Page</title>
+    <style>
+
+        body{
+          background-color: lightgoldenrodyellow;
+        }
+        label {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font: 1em sans-serif;
+        }
+
+        form {
+            margin: 20px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <form id="adminform"  >
+        <label for="product">Product :</label>
+        <input type="text" id="product" placeholder="Product Name" required>
+        <label for="sp">Selling Price:</label>
+        <input type="number" id="price" placeholder="Selling Price" required>
+        <label for="cat">Category:</label>
+        <select id="cat" >
+            <option value="skincare">Skin Care</option>
+            <option value="electronics">Electronics</option>
+            <option value="food">food</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Skin Care Items</h2>
+    <ul id="skincareitems" class=""></ul>
+
+    <h2>Electronic Items</h2>
+    <ul id="electronicitems"></ul>
+
+    <h2>Food Items</h2>
+    <ul id="fooditems"></ul>
+   
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+</body>
+
+</html>
